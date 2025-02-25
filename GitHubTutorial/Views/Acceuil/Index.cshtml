@@ -1,0 +1,177 @@
+﻿@{
+    ViewData["Title"] = "Guide Git & GitHub";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/Acceuil.css" />
+   
+</head>
+<body>
+
+    <header>
+        <h1>Guide Complet : Git & GitHub</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#install">Installation</a></li>
+            <li><a href="#commands">Commandes Git essentielles</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#tips">Bonnes pratiques</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>Introduction à Git & GitHub</h2>
+            <p>Git est un système de gestion de versions utilisé pour suivre les modifications du code. GitHub est une plateforme en ligne permettant de stocker et collaborer sur des projets Git.</p>
+        </section>
+
+        <section id="install">
+            <h2>Installation de Git</h2>
+            <p>Pour installer Git :</p>
+            <ul>
+                <li>Windows : Télécharger depuis <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a></li>
+                <li>Mac : <code>brew install git</code></li>
+                <li>Linux : <code>sudo apt install git</code></li>
+            </ul>
+        </section>
+
+        <section id="commands">
+            <h2>Commandes Git essentielles</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Commande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Initialiser un dépôt</td>
+                        <td><code>git init</code></td>
+                    </tr>
+                    <tr>
+                        <td>Ajouter des fichiers à la zone de staging</td>
+                        <td><code>git add .</code></td>
+                    </tr>
+                    <tr>
+                        <td>Sauvegarder les modifications</td>
+                        <td><code>git commit -m "Message"</code></td>
+                    </tr>
+                    <tr>
+                        <td>Vérifier l’état du dépôt</td>
+                        <td><code>git status</code></td>
+                    </tr>
+                    <tr>
+                        <td>Afficher l’historique des commits</td>
+                        <td><code>git log</code></td>
+                    </tr>
+                    <tr>
+                        <td>Envoyer le code sur GitHub</td>
+                        <td><code>git push origin main</code></td>
+                    </tr>
+                    <tr>
+                        <td>Récupérer les mises à jour</td>
+                        <td><code>git pull origin main</code></td>
+                    </tr>
+                    <tr>
+                        <td>Vérifier les dépôts distants</td>
+                        <td><code>git remote -v</code></td>
+                    </tr>
+                    <tr>
+                        <td>Changer l’URL du dépôt distant</td>
+                        <td><code>git remote set-url origin &lt;nouvelle-url&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="github">
+            <h2>GitHub : Héberger votre code</h2>
+            <p>Étapes :</p>
+            <ol>
+                <li>Créer un compte sur <a href="https://github.com" target="_blank">GitHub</a></li>
+                <li>Créer un dépôt en ligne</li>
+                <li>Lier votre dépôt local avec <code>git remote add origin URL_DU_DEPOT</code></li>
+                <li>Pousser votre code avec <code>git push -u origin main</code></li>
+            </ol>
+        </section>
+
+        <section id="tips">
+            <h2>Bonnes pratiques Git</h2>
+            <p>Quelques conseils :</p>
+            <ul>
+                <li>Faire des commits fréquents et clairs</li>
+                <li>Utiliser des branches pour le développement</li>
+                <li>Éviter de pousser du code sensible</li>
+                <li>Utiliser <code>.gitignore</code> pour exclure certains fichiers</li>
+            </ul>
+        </section>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Ce tutoriel te guide à travers le processus de création d'un dépôt Git et GitHub depuis le début.</p>
+        </section>
+
+        <section id="steps">
+            <h2>📌 Étapes à suivre</h2>
+
+            <h3>1. Supprimer l’ancien dépôt distant (si nécessaire)</h3>
+            <p>Si ton projet a déjà un dépôt distant et que tu veux tout recommencer, utilise cette commande :</p>
+            <pre><code>git remote remove origin</code></pre>
+
+            <h3>2. Créer un nouveau dépôt sur GitHub</h3>
+            <ol>
+                <li>Connecte-toi à ton compte GitHub.</li>
+                <li>Clique sur le bouton <strong>New repository</strong> (Nouveau dépôt).</li>
+                <li>Donne un nom à ton dépôt (par exemple, <code>generateur-de-mots-de-passe</code>).</li>
+                <li><strong>Ne coche pas</strong> les options pour initialiser un README, .gitignore ou une licence.</li>
+                <li>Clique sur <strong>Create repository</strong> (Créer le dépôt).</li>
+                <li>
+                    Copie l'URL du dépôt (par exemple, <code>https://github.com/df-houziaux/generateur-de-mots-de-passe.git</code>).
+                    <div class="arrow-container">
+                        <svg class="arrow-svg" viewBox="0 0 100 100">
+                            <path d="M10,50 L80,50 M70,40 L80,50 L70,60" stroke="black" stroke-width="5" fill="none" />
+                        </svg>
+                        <img src="images/imgtuto.png" alt="Tutoriel GitHub" class="tuto-image">
+                    </div>
+                </li>
+            </ol>
+
+
+
+            <h3>3. Associer ton projet local au nouveau dépôt GitHub</h3>
+            <p>Dans le terminal (à la racine de ton projet), suis ces étapes :</p>
+            <ol>
+                <li><strong>Initialiser Git dans ton dossier</strong> (si ce n'est pas déjà fait) :</li>
+                <pre><code>git init</code></pre>
+                <li><strong>Ajouter tous les fichiers au suivi Git :</strong></li>
+                <pre><code>git add .</code></pre>
+                <li><strong>Créer un premier commit :</strong></li>
+                <pre><code>git commit -m "Initial commit"</code></pre>
+                <li><strong>Ajouter le dépôt distant GitHub :</strong></li>
+                <pre><code>git remote add origin https://github.com/df-houziaux/generateur-de-mots-de-passe.git</code></pre>
+                <li><strong>Vérifier que le dépôt distant est bien ajouté :</strong></li>
+                <pre><code>git remote -v</code></pre>
+                <p>Cela doit afficher quelque chose comme :</p>
+                <pre><code>origin  https://github.com/df-houziaux/generateur-de-mots-de-passe.git (fetch)</code></pre>
+                <pre><code>origin  https://github.com/df-houziaux/generateur-de-mots-de-passe.git (push)</code></pre>
+                <li><strong>Pousser le code vers GitHub :</strong></li>
+                <pre><code>git branch -M main</code></pre>
+                <pre><code>git push -u origin main</code></pre>
+            </ol>
+
+            <h3>📝 Résumé</h3>
+            <p>En suivant ces étapes, tu as créé un nouveau dépôt sur GitHub et associé ton projet local à ce dépôt. Tu es maintenant prêt à travailler sur ton projet et à y ajouter des fonctionnalités !</p>
+        </section>
+    </main>
+
+    <script src="~/Acceuil.js"></script>
+</body>
+</html>
