@@ -28,3 +28,4 @@ E:\c sharp\GitHubTutorial\GitHubTutorial\obj\Debug\net8.0\refint\GitHubTutorial.
 E:\c sharp\GitHubTutorial\GitHubTutorial\obj\Debug\net8.0\GitHubTutorial.pdb
 E:\c sharp\GitHubTutorial\GitHubTutorial\obj\Debug\net8.0\GitHubTutorial.genruntimeconfig.cache
 E:\c sharp\GitHubTutorial\GitHubTutorial\obj\Debug\net8.0\ref\GitHubTutorial.dll
+E:\c sharp\GitHubTutorial\GitHubTutorial\obj\Debug\net8.0\GitHubTutorial.sourcelink.json

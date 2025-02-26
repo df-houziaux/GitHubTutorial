@@ -78,17 +78,17 @@ footer {
 .arrow-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacement entre la flèche et l'image */
+    gap: 10px;
     margin-top: 10px;
 }
 
 .arrow-svg {
-    width: 80px; /* Taille de la flèche */
+    width: 80px;
     height: 80px;
 }
 
 .tuto-image {
-    width: 800px; /* Taille de l'image */
+    width: 800px;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }

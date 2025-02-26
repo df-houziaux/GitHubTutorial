@@ -2,7 +2,7 @@
     max-width: 650px;
     margin: auto;
     padding: 40px;
-    background-color: #4a90e2;
+    background-color: #7f7b7d;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -10,38 +10,38 @@
 
 
 .explanation {
-    padding: 60px; /* Espacement intérieur */
-    background-color: #f9f9f9; /* Couleur de fond pour la section explicative */
-    border: 1px solid #ccc; /* Bordure autour de la section */
-    border-radius: 5px; /* Coins arrondis */
+    padding: 60px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-left: 30px;
 }
 
 .row {
-    align-items: flex-start; /* Aligner les colonnes en haut */
+    align-items: flex-start;
 }
 
 h2 {
-    margin-bottom: 30px; /* Espace entre le titre et les colonnes */
+    margin-bottom: 30px;
 }
 
 .label-container {
-    display: block; /* Pour faire en sorte que chaque label prenne toute la largeur */
-    border: 2px solid #8533e2; /* Couleur de la bordure */
-    border-radius: 5px; /* Pour des coins arrondis */
-    padding: 10px; /* Espacement intérieur */
-    margin-bottom: 15px; /* Espacement entre les labels */
-    background-color: #4caf50; /* Couleur de fond (facultatif) */
+    display: block;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #bfbdbd;
 }
 
     .label-container input,
     .label-container textarea {
-        border: none; /* Supprimer la bordure par défaut */
-        width: 100%; /* Prendre toute la largeur */
-        padding: 8px; /* Espacement intérieur pour les champs de saisie */
-        margin-top: 5px; /* Espacement au-dessus des champs de saisie */
-        border-radius: 3px; /* Pour des coins arrondis */
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre interne pour les champs de saisie */
+        border: none;
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
 .contact-form h2 {
@@ -75,8 +75,8 @@ h2 {
 
 .contact-form button {
     width: 50%;
-    background: #28a745;
-    color: white;
+    background: white;
+    color: black;
     border: none;
     padding: 15px;
     font-size: 1.2rem;

@@ -27,7 +27,7 @@
     function clearErrorMessage(input) {
         let errorMessage = input.nextElementSibling;
         if (errorMessage && errorMessage.classList.contains("error-message")) {
-            errorMessage.textContent = ""; // Supprime le texte d'erreur
+            errorMessage.textContent = "";
             errorMessage.style.display = "none";
         }
         input.classList.remove("error");
@@ -79,8 +79,8 @@
             }
 
         } else if (input.id === "message") {
-            const minLength = 10; // Longueur minimale du message
-            const messagePattern = /^[A-Z][a-zA-Z0-9\s.,!?'-]*$/; // Commence par une majuscule et autorise d'autres caractères
+            const minLength = 10;
+            const messagePattern = /^[A-Z][a-zA-Z0-9\s.,!?'-]*$/;
 
             if (value.length < minLength) {
                 showErrorMessage(input, `⚠️ Le message doit contenir au moins ${minLength} caractères.`);
@@ -100,7 +100,7 @@
     inputs.forEach((input, index) => {
         input.addEventListener("blur", function () {
             if (!validateField(input)) {
-                input.focus(); // Empêcher de passer au champ suivant tant que l'erreur n'est pas corrigée
+                input.focus();
             } else if (index < inputs.length - 1) {
                 inputs[index + 1].focus();
             }
