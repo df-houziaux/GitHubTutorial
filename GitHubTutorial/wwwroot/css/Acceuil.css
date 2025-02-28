@@ -1,4 +1,7 @@
-﻿html, body {
+﻿/* ========================== 
+   GLOBAL 
+========================== */
+html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,6 +9,9 @@
     background-color: #f4f4f4;
 }
 
+/* ========================== 
+   HEADER 
+========================== */
 header {
     background: #333;
     color: white;
@@ -13,6 +19,9 @@ header {
     padding: 20px;
 }
 
+/* ========================== 
+   NAVIGATION 
+========================== */
 nav {
     background: #444;
 }
@@ -39,6 +48,16 @@ nav {
                     background: #555;
                 }
 
+                nav ul li a.active {
+                    background-color: #ffcc00;
+                    color: #000;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+/* ========================== 
+   MAIN CONTENT 
+========================== */
 main {
     flex-grow: 1;
     padding: 20px;
@@ -48,6 +67,9 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ========================== 
+   TABLES 
+========================== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -68,6 +90,9 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* ========================== 
+   FOOTER 
+========================== */
 footer {
     text-align: center;
     padding: 10px;
@@ -75,6 +100,9 @@ footer {
     color: white;
 }
 
+/* ========================== 
+   FLÈCHES & IMAGES 
+========================== */
 .arrow-container {
     display: flex;
     align-items: center;
@@ -91,4 +119,14 @@ footer {
     width: 800px;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================== 
+   MISE EN ÉVIDENCE DES SECTIONS CIBLÉES 
+========================== */
+section:target {
+    text-decoration: underline;
+    background-color: rgba(255, 204, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
 }
